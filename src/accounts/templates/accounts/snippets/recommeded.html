@@ -1,0 +1,6 @@
+   <h1>Recommended Users</h1>
+        {%  for profile in recommended %}
+              <a href="/{{profile.user.username}}">{{profile.user.username}}</a> <br/>
+                {% empty %}
+        <h4>None recomended</h4>
+        {% endfor %}
